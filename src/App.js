@@ -4,8 +4,7 @@ import { useState } from "react";
 
 import NewsCards from "./components/NewsCards/NewsCards";
 
-const alanKey =
-  "564e5bef451cbc183e54a86bd49bb5502e956eca572e1d8b807a3e2338fdd0dc/stage";
+const alanKey = process.env.REACT_APP_ALAN_KEY;
 
 const App = () => {
   const [newsArticles, setNewsArticles] = useState([]);
