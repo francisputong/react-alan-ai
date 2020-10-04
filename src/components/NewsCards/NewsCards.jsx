@@ -25,6 +25,11 @@ const infoCards = [
     info: "CNN, Wired, BBC News, Time, IGN, Buzzfeed, ABC News...",
     text: "Give me the news from CNN",
   },
+  {
+    color: "#191919",
+    title: "Visit my GitHub Profile!",
+    text: "Open GitHub",
+  },
 ];
 
 const NewsCards = ({ articles, activeArticle }) => {

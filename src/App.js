@@ -16,7 +16,7 @@ const App = () => {
   useEffect(() => {
     alanBtn({
       key: alanKey,
-      onCommand: ({ command, articles, number }) => {
+      onCommand: ({ command, articles, number, media }) => {
         if (command === "newHeadlines") {
           setNewsArticles(articles);
           setActiveArticle(-1);
@@ -31,6 +31,12 @@ const App = () => {
           } else if (article) {
             window.open(article.url, "_blank");
             alanBtn().playText("Opening...");
+          }
+        } else if (command === "openSocial") {
+          switch (media) {
+            case "GitHub":
+              window.open("https://github.com/francisputong");
+              break;
           }
         }
       },
